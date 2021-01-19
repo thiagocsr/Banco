@@ -13,7 +13,7 @@ public class Principal extends Conta {
 		int opc = 0;
 		Scanner e = new Scanner(System.in);
 
-		System.out.println("Bem-vindo ao banco dos cornos.");
+		System.out.println("Bem-vindo ao banco generico.");
 		Conta c = new Conta();
 		System.out.println("Digite seu nome.");
 		c.setNome(e.nextLine());
@@ -43,7 +43,7 @@ public class Principal extends Conta {
 			try {
 			aux = e.nextInt();
 			}catch (InputMismatchException x) {
-				System.out.println("Opção invalida.");
+				System.out.println("OpÃ§Ã£o invalida.");
 				aux = 4;
 			}
 			switch (aux) {
@@ -86,10 +86,10 @@ public class Principal extends Conta {
 				}
 				break;
 			case 4:
-				System.out.println("Fim de operação.");
+				System.out.println("Fim de operaÃ§Ã£o.");
 				break;
 			default:
-				System.out.println("Opção invalida.");
+				System.out.println("OpÃ§Ã£o invalida.");
 			}
 		} while (aux != 4);
 
